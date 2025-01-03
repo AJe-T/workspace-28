@@ -1,20 +1,23 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
-import UserManger from "./components/example2/UserManger";
-// import ParentComponent from "./components/example1/parentComponent";
+import FirstComponent from "./components/useContext/FirstComponent";
+// import FirstBox from "./components/propsDrilling/FirstBox";
+
+export const fullData = createContext("");
 
 const App: React.FC = () => {
+  const [data, setData] = useState<string>("Hello World");
   return (
     <>
-      <NavBar
-        heading="Component Intraction"
-        bgColor="bg-info"
-        color="navbar-light"
-      />
+      <NavBar heading="use Context" bgColor="bg-info" color="navbar-light" />
       <div className="mt-4 root container">
-        <UserManger/>
+        <h1>This is a App Component - {data}</h1>
+        {/* <FirstBox data={data} /> */}
+        <fullData.Provider value={data}>
+          <FirstComponent />
+        </fullData.Provider>
       </div>
     </>
   );
