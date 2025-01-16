@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "name": "Naveen",
+      "imageUrl": "https://icons.iconarchive.com/icons/pelfusion/long-shadow-media/512/Contact-icon.png",
+      "mobile": "9000804533",
+      "email": "naveen@gmail.com",
+      "company": "tcs",
+      "title": "Tech Lead",
+      "groupId": "6",
+      "id": "93dWfs3"
+    },
+    {
+      "name": "harsha",
+      "imageUrl": "",
+      "mobile": "9668385510",
+      "email": "harsha@gmail.com",
+      "company": "amazon",
+      "title": "se-developer",
+      "groupId": "3",
+      "id": "vkuNBA3"
+    },
+    {
+      "name": "teja",
+      "imageUrl": "https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png",
+      "mobile": "666896779",
+      "email": "ricare6535@pbridal.com",
+      "company": "tcs",
+      "title": "admin",
+      "groupId": "4",
+      "id": "75viG4Q"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
