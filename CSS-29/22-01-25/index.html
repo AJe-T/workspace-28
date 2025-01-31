@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 50px;
+        height: 100vh;
+        background-color: lightslategrey;
+      }
+      .container {
+        background-color: lavender;
+        height: 100%;
+        /* position: relative; */
+      }
+
+      .box1 {
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(to bottom, orange 30%, white 40%, green);
+        /* border: 2px solid black; */
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        display: inline-block;
+        /* bottom: 100px; */
+      }
+      .box2 {
+        height: 100px;
+        width: 100px;
+        background: radial-gradient(red, blue 50%, green 10%, yellow);
+        border: 2px solid black;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        box-shadow: 0 0 15px black;
+        display: inline-block;
+        /* bottom: 100px; */
+      }
+      h1{
+        text-shadow: 5px 5px 5px  orange , 10px 10px 10px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <h1>This is a Text</h1>
+    </div>
+  </body>
+</html>

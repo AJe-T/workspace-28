@@ -1,0 +1,114 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.box {
+  display: grid;
+  margin: 50px;
+  width: 90vw;
+  grid-template-areas:
+    "imgBox1 imgBox2 imgBox3"
+    "imgBox4 imgBox5 imgBox6"
+    "imgBox7 imgBox8 imgBox9"
+    "imgBox10 imgBox11 imgBox12";
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#card1 {
+  grid-area: imgBox1;
+}
+#card2 {
+  grid-area: imgBox2;
+}
+#card3 {
+  grid-area: imgBox3;
+}
+#card4 {
+  grid-area: imgBox4;
+}
+#card5 {
+  grid-area: imgBox5;
+}
+#card6 {
+  grid-area: imgBox6;
+}
+#card7 {
+  grid-area: imgBox7;
+}
+#card8 {
+  grid-area: imgBox8;
+}
+#card9 {
+  grid-area: imgBox9;
+}
+#card10 {
+  grid-area: imgBox10;
+}
+#card11 {
+  grid-area: imgBox11;
+}
+#card12 {
+  grid-area: imgBox12;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  position: relative;
+}
+
+.card img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  filter: grayscale(0%);
+  box-shadow: 0px 0px 25px black;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card p {
+  font-size: x-large;
+  color: red;
+  position: relative;
+  bottom: 0; /* Position the text at the bottom initially */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1; /* Ensure the text is above the image */
+  opacity: 0; /* Hide the text by default */
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.card:hover p {
+  opacity: 1; /* Show the text when the card is hovered */
+  color: white;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom:hover {
+  z-index: 1;
+}

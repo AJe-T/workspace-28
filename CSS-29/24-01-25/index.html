@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 80vh;
+        width: 80vw;
+        background-color: lightslategrey;
+        margin: auto;
+        margin-top: 10vh;
+        perspective: 500px;
+      }
+      .box {
+        height: 60px;
+        width: 60px;
+        background-color: black;
+        border: 2px solid white;
+        margin: 5px;
+        color: white;
+      }
+      #box1 {
+        /* transform: translate(60px, 60px); */
+        /* transform: translateX(60px); */
+        /* transform: translateY(60px); */
+        background-color: red;
+        transform: translateX(-60px);
+        transform: translateY(-60px);
+        transform: translate(-60px, -60px);
+      }
+      /* #box2 {
+        transform: rotate(45deg);
+        transform: rotateY(180deg);
+        background-color: lavender;
+        color: black;
+      }
+      #box3 {
+        transform: scale(1.5);
+        background-color: greenyellow;
+        color: black;
+      }
+      #box4 {
+        transform: skewY(30deg);
+        background-color: blue;
+        color: white;
+      } */
+
+      #box5 {
+        background-color: rgb(210, 33, 210);
+        color: white;
+        transform: rotateY(-45deg) scaleZ(2);
+        /* transform: translateZ(-600px); */
+        /* transform: scaleZ(2); */
+        /* transform: translate(45deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+    </div>
+  </body>
+</html>

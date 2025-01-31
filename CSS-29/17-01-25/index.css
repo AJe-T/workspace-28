@@ -1,0 +1,22 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.heading {
+  background-color: red;
+  font-size: xx-large;
+  /* padding-right: 15px; */
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px dashed orange;
+  margin-left: 50px;
+  margin-top:300px;
+}
